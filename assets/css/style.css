@@ -99,7 +99,11 @@ footer {
 }
 
 #contacts h3 {
-    text-align: start;
+    text-align: center;
+}
+
+address {
+    text-align: center;
 }
 
 /* Media Query */
