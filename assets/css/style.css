@@ -20,16 +20,18 @@
 }
 
 /* General Styles */
-h1 {
+h1, 
+h2,
+h3 {
     text-align: center;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
     color: var(--primary-color);
     font-family: var(--primary-font);
 }
 
-h2,
-h3 {
-    color: var(--primary-color);
-    font-family: var(--primary-font);
+.logo {
+    width: 40px;
 }
 
 .tour-button {
@@ -87,9 +89,15 @@ footer {
     color: white;
     margin-bottom: 0;
 }
-#contacts h2 {
+#contacts h2,
+#contacts h3 {
     color: white;
 }
+
+#contacts h3 {
+    text-align: start;
+}
+
 /* Media Query */
 /* Small Screens */
 @media screen and (min-width: 300px) {
