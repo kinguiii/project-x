@@ -1,9 +1,27 @@
 /* Google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* CSS Variables */
+:root {
+    --primary-font: "Open-sans", sans-serif;
+    --secondary-font: "Montserrat", Sans;
+    --primary-color: rgb(10, 88, 148);
+    /* Blue */
+    --secondary-color: #aa9581;
+    /* light brown */
+    --highlight-color: #416a8e;
+    /* blue */
+    --highlight-color-light: #7a9fc2;
+    /* light blue */
+}
+
 /* Global Styles */
 
+
+
+
 /* General Styles */
+/* Pushes the footer to the bottom of the page */
 main {
     min-height: 100vh;
     display: flex;
@@ -12,35 +30,84 @@ main {
 
 /* Navigation Bar */
 #nav {
-    background-color: rgb(10, 88, 148);
+    background-color: var(--primary-color);
+    text-align: center;
 }
 
 #nav .logo {
     width: 40px;
 }
 
-/* Main */
-header {
+/* Hero section */
+#hero {
     margin-top: 30px;
 }
 
-header h1 {
+#hero h1 {
     text-align: center;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
 }
+
+#hero p {
+    font: 25px var(--secondary-font);
+}
+
 /* Carousel */
-#hero-carousel {
 
-    max-width: 100%;
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
 }
 
-#hero-carousel .carousel-item {
-    max-height: 356.25px;
+.img-carousel {
+    object-fit: contain;
 }
-
 
 /* Media Query */
-@media screen and (min-width: 1200px){
-    header h1 {
-        text-align: left;
+/* Small Screens */
+@media screen and (min-width: 300px) {
+    #hero-carousel .carousel-item {
+
+        width: 100%;
+        max-height: 165px;
+}
+
+/* Medium Screens */
+}
+@media screen and (min-width: 500px) {
+    #hero-carousel .carousel-item {
+
+        width: 100%;
+        max-height: 285px;
+}
+
+/* Large Screens */
+}
+@media screen and (min-width: 800px) {
+    #hero-carousel .carousel-item {
+
+        width: 100%;
+        max-height: 390px;
+}
+}
+
+/* Extra Large Screens makes transition to 1200px smoother */
+@media screen and (min-width: 1140px) {
+
+    #hero-carousel .carousel-item {
+
+        width: 940px;
+        max-height: 530px;
+    }
+}
+
+/* Extra Large Screens */
+@media screen and (min-width: 1200px) {
+
+    #hero-carousel .carousel-item {
+        width: 580px;
+        max-height: 285px;
     }
 }
