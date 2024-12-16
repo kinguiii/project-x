@@ -94,6 +94,10 @@ footer {
     color: white;
 }
 
+#contacts h2 {
+    margin-top: 20px;
+}
+
 #contacts h3 {
     text-align: start;
 }
